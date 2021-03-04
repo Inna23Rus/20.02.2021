@@ -96,19 +96,32 @@ header {
 }
 
 .gignity_list {
-    list-style-image: url(img/plus%20icon.svg);
-    list-style-position: inside;
-    column-count: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
-.gignity_list li {
+.gignity_list_item {
+    display: flex;
+    justify-content: flex-start;
+    width: 568px;
+    box-sizing: border-box;
+    padding-bottom: 33px;
+}
+
+.gignity_list_item img {
+    width: 34px;
+    height: 35px;
+    margin-right: 8px;
+}
+
+.gignity_list_item p {
     color: #333333;
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 33px;
-
 }
+
 
 .screenshots {
     padding: 25px 50px 33px 50px;
